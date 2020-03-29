@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>HTML Academy: Мишка</title>
+  </head>
+  <body>
+    <header class="page_header">
+      <a class="page_header_logo header_logo" href="">
+        <img class="header_logo_img" src="" width="86" height="35" alt="Логотип интернет-магазина Мишка">
+      </a>
+      <nav class="main_nav nav">
+        <button class="nav_toggle">Открыть меню</button>
+
+        <ul class="nav_list">
+          <li class="nav_item">
+            <a class="nav_link" href="">Каталог товаров</a>
+          </li>
+          <li class="nav_item">
+            <a class="nav_link" href="form.html">Вязание на заказ</a>
+          </li>
+          <li class="nav_item">
+            <form class="nav_item_search item_search" action="https://echo.htmlacademy.ru" method="post">
+              <input class="item_search_input" type="search" name="search" id="search" placeholder="Поиск по сайту">
+              <label class="item_search_label" for="search">Поиск</label>
+              <button class="item_search_submit visually-hidden" type="submit">Найти</button>
+            </form>
+          </li>
+          <li class="nav_item">
+            <a class="nav_link" href="">Корзина: пока пуста</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main">
+      <h1 class="catalog_title">Каталог товаров</h1>
+
+      <section class="products">
+        <h2 class="visually-hidden">Популярные товары</h2>
+        <ul class="products_list">
+          <li class="products_item product">
+            <article>
+              <img class="product_img" src="" width="260" height="195" alt="Зайчик-попрыгайчик">
+              <a class="product_link" >
+                <h3 class="product_title">Зайчик-попрыгайчик</h3>
+              </a>
+              <p class="product_desc">Рост 30 см, вес 200 г</p>
+              <p class="product_price">1 200 руб.</p>  
+            </article>
+          </li>
+          <li class="products_item product">
+            <article>
+              <img class="product_img" src="" width="260" height="195" alt="Корзинка для белья">
+              <a class="product_link" >
+                <h3 class="product_title">Корзинка для белья</h3>
+              </a>
+              <p class="product_desc">Диаметр 15 см, высота 10 см</p>
+              <p class="product_price">690 руб.</p>  
+            </article>
+          </li>
+          <li class="products_item product">
+            <article>
+              <img class="product_img" src="" width="260" height="195" alt="Большая корзинка для игрушек">
+              <a class="product_link" >
+                <h3 class="product_title">Большая корзинка для игрушек</h3>
+              </a>
+              <p class="product_desc">Диаметр 30 см, высота 30 см</p>
+              <p class="product_price">1 500 руб.</p>  
+            </article>
+          </li>
+        </ul>
+      </section>
+    
+    </main>
+
+    <footer class="page_footer">
+      <ul class="page_footer_list">
+        <li class="page_footer_item"><a href="">Instagram</a></li>
+        <li class="page_footer_item"><a href="">Facebook</a></li>
+        <li class="page_footer_item"><a href="">Twitter</a></li>
+      </ul>
+      <div class="page_footer_developer developer">
+        <a class="developer_link" href="">Разработано</a>
+        <!-- svg-иконка -->
+      </div>
+    </footer>
+  </body>
+</html>
