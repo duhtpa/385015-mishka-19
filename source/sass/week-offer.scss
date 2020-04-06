@@ -1,0 +1,80 @@
+.week-offer {
+  @include side-padding();
+}
+
+.week-offer__header {
+  padding-top: 34px;
+}
+
+.week-offer__title {
+  line-height: 1.2;
+  font-size: 25px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.week-offer__text {
+  color: $bg-green--light;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 1.176;
+  text-transform: uppercase;
+}
+
+.week-offer__description {
+  color: #444444;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  line-height: 1.6;
+}
+
+.table_parameters {
+  border-collapse: separate;
+  border-spacing: 0;
+  width: 100%;
+}
+
+.offer-parameters__row {
+  height: 40px;
+}
+
+.offer-parameters__cell {
+  border-bottom: 1px solid #ececec;
+  color: #444444;
+  font-size: 15px;
+  line-height: 1.333;
+  width: 55%;
+}
+
+.offer-parameters__cell--left {
+  width: 45%;
+}
+
+.week-offer__img {
+  padding-top: 28px;
+}
+
+.week-offer__price {
+  color: #444444;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 1.412;
+  text-align: center;
+  width: 100%;
+}
+
+.week-offer__buy {
+  border: 2px solid #000000;
+  color: #444444;
+  display: block;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 1.176;
+  margin-bottom: 36px;
+  padding-bottom: 20px;
+  padding-left: 84px;
+  padding-right: 85px;
+  padding-top: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}

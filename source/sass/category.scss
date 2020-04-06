@@ -1,0 +1,24 @@
+.category-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.category-list__item{
+  @include side-padding();
+  padding-right: 185px;
+  padding-top: 30px;
+  &--left {
+    background-color: $bg-green--light;
+  }
+  &--right {
+    background-color: $bg-green--darker;
+  }
+}
+
+.category-list__link {
+  color: #ffffff;
+  font-family: $main-font;
+  font-size: 19px;
+  font-weight: bold;
+}

@@ -1,0 +1,23 @@
+.about {
+  @include side-padding();
+}
+
+.about__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-top: 34px;
+}
+
+.about__title {
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.about-list__item {
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 1.176;
+  padding-top: 88px;
+}
