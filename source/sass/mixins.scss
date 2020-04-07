@@ -1,4 +1,39 @@
-@mixin side-padding {
-  padding-left: 30px;
-  padding-right: 30px;
+@mixin font($ff, $fz, $lh) {
+  font-family: $ff;
+  font-size: $fz;
+  line-height: $lh;
+}
+
+@mixin list($ls: none, $m: 0, $p: 0) {
+  list-style: $ls;
+  margin: $m;
+  padding: $p;
+}
+
+@mixin border($size: 2px, $type: solid, $color: $black) {
+  border: $size $type $color;
+}
+
+@mixin border-b($size: 2px, $type: solid, $color: $offer-color) {
+  border-bottom: $size $type $color;
+}
+
+@mixin margin-h($ml, $mr) {
+  margin-left: $ml;
+  margin-right: $mr;
+}
+
+@mixin padding-h($pl: 30px, $pr: 30px) {
+  padding-left: $pl;
+  padding-right: $pr;
+}
+
+@mixin padding-v($pb, $pt) {
+  padding-bottom: $pb;
+  padding-top: $pt;
+}
+
+@mixin indent--null {
+  margin: 0;
+  padding: 0;
 }

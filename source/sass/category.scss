@@ -1,24 +1,22 @@
 .category-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  @include list();
 }
 
-.category-list__item{
-  @include side-padding();
+.category-list__item {
+  @include padding-h();
+  @include padding-v(30px, 30px);
   padding-right: 185px;
-  padding-top: 30px;
+  
   &--left {
     background-color: $bg-green--light;
   }
+  
   &--right {
     background-color: $bg-green--darker;
   }
 }
 
 .category-list__link {
-  color: #ffffff;
-  font-family: $main-font;
-  font-size: 19px;
-  font-weight: bold;
+  @include font($font--bold, 19px, 1);
+  color: $white;
 }

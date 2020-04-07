@@ -1,23 +1,20 @@
 .intro {
   background-color: $bg-grey;
   min-width: 320px;
-  padding-bottom: 74px;
-  padding-top: 76px;
+  
   &--bg {
+    @include padding-v(120px, 76px);
     background-image: url(../img/hero-mobile@1x.jpg);
     background-position: center top;
     background-size: 165%;
-    padding-bottom: 120px;
     height: 280px;
   }
 }
 
 .intro__title {
-  color: #010000;
-  font-family: $main-font;
-  font-size: 26.35px;
-  font-weight: bold;
-  line-height: 1.111;
+  @include font($font--bold, 26px, 1.1);
+  @include padding-v(75px, 75px);
+  color: $black;
   margin: auto;
   text-align: center;
   width: 280px;
