@@ -1,0 +1,22 @@
+.category-list {
+  @include list();
+}
+
+.category-list__item {
+  @include padding-h();
+  @include padding-v(30px, 30px);
+  padding-right: 185px;
+  
+  &--left {
+    background-color: $bg-green--light;
+  }
+  
+  &--right {
+    background-color: $bg-green--darker;
+  }
+}
+
+.category-list__link {
+  @include font($font--bold, 19px, 1);
+  color: $white;
+}

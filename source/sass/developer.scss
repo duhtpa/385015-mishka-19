@@ -1,0 +1,9 @@
+.developer {
+  @include padding-v(31px, 22px);
+  padding-left: 39px;
+}
+
+.developer__link {
+  @include font($font--bold, 19px, 0.9);
+  color: $black;
+}

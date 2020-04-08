@@ -1,0 +1,21 @@
+.intro {
+  background-color: $bg-grey;
+  min-width: 320px;
+  
+  &--bg {
+    @include padding-v(120px, 76px);
+    background-image: url(../img/hero-mobile@1x.jpg);
+    background-position: center top;
+    background-size: 165%;
+    height: 280px;
+  }
+}
+
+.intro__title {
+  @include font($font--bold, 26px, 1.1);
+  @include padding-v(75px, 75px);
+  color: $black;
+  margin: auto;
+  text-align: center;
+  width: 280px;
+}

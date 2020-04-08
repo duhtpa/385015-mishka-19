@@ -1,0 +1,4 @@
+.page-footer {
+  @include padding-h(30px, 30px);
+  background-color: $bg-grey;
+}

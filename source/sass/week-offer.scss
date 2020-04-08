@@ -1,0 +1,68 @@
+.week-offer {
+  @include padding-h(30px, 30px);
+}
+
+.week-offer__header {
+  padding-top: 34px;
+}
+
+.week-offer__title {
+  @include font($font--bold, 25px, 1.2);
+  margin: 0;
+}
+
+.week-offer__text {
+  @include font($font--bold, 17px, 1.2);
+  color: $bg-green--light;
+  text-transform: uppercase;
+}
+
+.week-offer__description {
+  @include font($font--normal, 15px, 1.6);
+  color: $gray--dark;
+  letter-spacing: 0.5px;
+}
+
+.table_parameters {
+  border-collapse: separate;
+  border-spacing: 0;
+  width: 100%;
+}
+
+.offer-parameters__row {
+  height: 40px;
+}
+
+.offer-parameters__cell {
+  @include font($font--normal, 15px, 1.3);
+  border-bottom: 1px solid $offer-color;
+  color: $gray--dark;
+  width: 55%;
+  
+  &--left {
+    width: 45%;
+  }
+}
+
+.week-offer__img {
+  padding-top: 28px;
+}
+
+.week-offer__price {
+  @include font($font--bold, 17px, 1.4);
+  color: $gray--dark;
+  text-align: center;
+  width: 100%;
+}
+
+.week-offer__buy {
+  @include border();
+  @include font($font--bold, 17px, 1.2);
+  @include padding-h(85px, 85px);
+  @include padding-v(20px, 20px);
+  color: $gray--dark;
+  display: block;
+  margin-bottom: 36px;
+  text-align: center;
+  text-transform: uppercase;
+}

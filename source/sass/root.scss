@@ -1,0 +1,28 @@
+html {
+  box-sizing: border-box;
+  font-family: $font--normal;
+}
+
+*, *::before, *::after { 
+  box-sizing: inherit; 
+}
+
+a {
+  text-decoration: none;
+}
+
+img { 
+  height: auto;
+  max-width: 100%;
+}
+
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}

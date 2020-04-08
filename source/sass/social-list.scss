@@ -1,0 +1,12 @@
+.social-list {
+  @include padding-v(26px, 26px);
+  border-bottom: 1px solid $social-color;
+}
+
+.social-list__item {
+  @include list();
+}
+
+.social-list__item:not(:last-of-type) {
+  margin-right: 40px;
+}
