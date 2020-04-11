@@ -1,7 +1,11 @@
+.main {
+  @include flex--column();
+}
+
 .intro {
+  @include mobile--first();
   background-color: $bg-grey;
-  min-width: 320px;
-  
+
   &--bg {
     @include padding-v(120px, 76px);
     background-image: url(../img/hero-mobile@1x.jpg);

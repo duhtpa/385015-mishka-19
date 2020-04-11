@@ -1,4 +1,5 @@
 .developer {
+  @include mobile--first();
   @include padding-v(31px, 22px);
   padding-left: 39px;
 }

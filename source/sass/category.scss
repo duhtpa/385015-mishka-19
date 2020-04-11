@@ -1,3 +1,7 @@
+.category {
+  @include mobile--first();
+}
+
 .category-list {
   @include list();
 }

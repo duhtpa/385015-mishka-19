@@ -1,3 +1,7 @@
+.products {
+  @include mobile--first();
+}
+
 .products__list {
   @include indent--null();
   @include padding-h();
