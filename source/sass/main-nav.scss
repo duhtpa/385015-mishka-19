@@ -25,6 +25,15 @@
   @include padding-v(30px, 30px);
   border-top: 1px solid $nav-color;
   width: 100%;
+
+  &--new,
+  &--sale,
+  &--new .main-nav__link,
+  &--sale .main-nav__link {
+    font-size: 0;
+    padding: 0;
+    border: none;
+  }
 }
 
 .main-nav__link {
@@ -40,37 +49,31 @@
   }
 
   .main-nav__list {
-    flex-direction: row;
-    // justify-content: space-between;
-
     @include padding-h(50px, 50px);
-
+    flex-direction: row;
+    flex-wrap: wrap;
     min-height: 70px;
   }
 
   .main-nav__item {
     border-top: none;
     width: auto;
-    // text-align-last: left;
-
-    // &--cart {
-    //   min-width: 200px;
-    // }
+    padding: 0;
 
     &--catalog,
     &--order {
-      // background-color: $bg-grey;
-      margin-top: 70px;
-      padding-top: 30px;
+      margin-top: 110px;
+      // padding-top: 30px;
 
       & .main-nav__link {
         font-size: 15px;
-        // padding-right: 10px;
       }
     }
 
-    &--cart {
+    &--cart,
+    &--search {
       margin-left: auto;
+      margin-top: 30px;
     }
 
     &--catalog .main-nav__link {
@@ -93,7 +96,6 @@
   }
 
   .main-nav__list--wrap-new-sale {
-    // background-color: $bg-grey;
     margin-top: -72px;
     padding-top: 20px;
   }
@@ -103,20 +105,17 @@
     font-size: 15px;
     margin: 0;
     margin-left: auto;
+    margin-top: -20px;
   }
 }
 
 @media (min-width: $w--desctop) {
-  // Меняем ширину контейнера.
-  .main-nav__wrapper {
-    width: $w--desctop;
-  }
-
   .main-nav__item {
     &--catalog,
-    &--order {
+    &--order,
+    &--cart {
       margin: 0;
-      padding-top: 30px;
+      padding-top: 20px;
 
       & .main-nav__link {
         font-size: 17px;
@@ -126,6 +125,11 @@
     &--new,
     &--sale {
       padding: 0;
+      padding-top: 60px;
+      
+      & .main-nav__link {
+        font-size: 15px;
+      }
     }
 
     &--catalog .main-nav__link {
@@ -141,7 +145,9 @@
     }
 
     &--search .main-nav__link {
+      margin-left: 250px;
       padding-right: 20px;
+      width: 190px;
     }
   }
 
@@ -151,5 +157,9 @@
     & .main-nav__link {
       font-size: 15px;
     }
+  }
+
+  .main-nav__text {
+    padding-top: 80px;
   }
 }

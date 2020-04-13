@@ -43,7 +43,18 @@
     width: $w--desctop;
   }
 
+  .page-footer__logo {
+    width: 120px;
+    margin-left: -10px;
+  }
+
   .page-footer__wrapper {
-    width: $w--desctop-wrapper;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .wrapper {
+    margin: 0 auto;
+    width: $w--desctop;
   }
 }
