@@ -5,7 +5,7 @@
   width: $w--mobile;
 }
 
-.page-footer__list, 
+.page-footer__list,
 .page-footer__developer {
   @include padding-v(26px, 26px);
 }
@@ -24,28 +24,26 @@
     width: 120px;
   }
 
-  .page-footer__list, 
+  .page-footer__list,
   .page-footer__developer {
     @include padding-v(55px, 55px);
   }
-
 
   .page-footer__wrapper {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin: 0 auto;
-    // min-height: 70px;
     width: $w--tablet-wrapper;
   }
 }
 
-  @media (min-width: $w--desctop) {
-    .page-footer {
-      width: $w--desctop;
-    }
-
-    .page-footer__wrapper {
-      width: $w--desctop-wrapper;
-    }
+@media (min-width: $w--desctop) {
+  .page-footer {
+    width: $w--desctop;
   }
+
+  .page-footer__wrapper {
+    width: $w--desctop-wrapper;
+  }
+}

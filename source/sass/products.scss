@@ -22,7 +22,11 @@
 }
 
 .product-item__bottom {
+  @include margin-h(30px, 30px);
+  @include padding-v(30px, 27px);
   border-top: 1px solid $product-color;
+  display: flex;
+  justify-content: space-between;
 }
 
 .product-item__top {
@@ -40,13 +44,6 @@
   @include indent--null();
   color: $gray--dark;
   padding-top: 10px;
-}
-
-.product-item__bottom {
-  @include margin-h(30px, 30px);
-  @include padding-v(30px, 27px);
-  display: flex;
-  justify-content: space-between;
 }
 
 .products-item__price {

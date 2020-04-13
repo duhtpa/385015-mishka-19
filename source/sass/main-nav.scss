@@ -22,8 +22,8 @@
 }
 
 .main-nav__item {
-  border-top: 1px solid $nav-color;
   @include padding-v(30px, 30px);
+  border-top: 1px solid $nav-color;
   width: 100%;
 }
 
@@ -82,16 +82,13 @@
     }
 
     &--search .main-nav__link {
+      font-size: 0;
       padding-right: 20px;
     }
 
     &--new,
     &--sale {
       width: auto;
-    }
-
-    &--search .main-nav__link {
-      font-size: 0;
     }
   }
 
@@ -128,7 +125,7 @@
 
     &--new,
     &--sale {
-      padding: 0;;
+      padding: 0;
     }
 
     &--catalog .main-nav__link {

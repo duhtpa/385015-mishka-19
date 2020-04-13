@@ -8,7 +8,7 @@
 
   &--bg {
     @include padding-v(120px, 76px);
-    background-image: url(../img/hero-mobile@1x.jpg);
+    background-image: url("../img/hero-mobile@1x.jpg");
     background-position: center top;
     background-size: 165%;
     height: 280px;
@@ -26,7 +26,6 @@
 
 @media (min-width: $w--tablet) {
   .main {
-    // @include padding-h(50px, 50px);
     margin: 0;
     width: auto;
   }
@@ -36,7 +35,6 @@
     margin: 0 auto;
     margin-top: -70px;
     z-index: -1;
-    
 
     &--bg {
       background-position: center top;

@@ -10,11 +10,11 @@
   @include padding-h();
   @include padding-v(30px, 30px);
   padding-right: 185px;
-  
+
   &--left {
     background-color: $bg-green--light;
   }
-  
+
   &--right {
     background-color: $bg-green--darker;
   }
@@ -28,13 +28,13 @@
 @media (min-width: $w--tablet) {
   .category {
     margin: 0;
-    width: auto;  
+    width: auto;
   }
 
   .category-list {
     display: flex;
     flex-direction: row;
-    width: $w--tablet-wrapper
+    width: $w--tablet-wrapper;
     margin: 0 auto;
     margin-top: -100px;
   }
