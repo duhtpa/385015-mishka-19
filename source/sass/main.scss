@@ -23,3 +23,45 @@
   text-align: center;
   width: 280px;
 }
+
+@media (min-width: $w--tablet) {
+  .main {
+    // @include padding-h(50px, 50px);
+    margin: 0;
+    width: auto;
+  }
+
+  .intro {
+    width: $w--tablet;
+    margin: 0 auto;
+    margin-top: -70px;
+    z-index: -1;
+    
+
+    &--bg {
+      background-position: center top;
+      height: 790px;
+    }
+  }
+
+  .intro__title {
+    font-size: $font--tablet;
+    width: 100%;
+  }
+}
+
+@media (min-width: $w--desctop) {
+  .intro {
+    width: $w--desctop;
+
+    &--bg {
+      background-size: 110%;
+      height: 746px;
+    }
+  }
+
+  .intro__title {
+    font-size: $font--desctop;
+    width: 720px;
+  }
+}

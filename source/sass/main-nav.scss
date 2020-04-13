@@ -7,8 +7,18 @@
 }
 
 .main-nav__list {
+  @include flex--column();
   @include list();
   text-align: center;
+}
+
+.main-nav__list--wrap-new-sale {
+  height: 0;
+}
+
+.main-nav__list--wrap-new-sale .main-nav__link,
+.main-nav__text {
+  font-size: 0;
 }
 
 .main-nav__item {
@@ -21,4 +31,128 @@
   @include font($font--bold, 17px, 1.4);
   color: $black;
   text-align: center;
+}
+
+@media (min-width: $w--tablet) {
+  .main-nav {
+    margin: 0;
+    width: auto;
+  }
+
+  .main-nav__list {
+    flex-direction: row;
+    // justify-content: space-between;
+
+    @include padding-h(50px, 50px);
+
+    min-height: 70px;
+  }
+
+  .main-nav__item {
+    border-top: none;
+    width: auto;
+    // text-align-last: left;
+
+    // &--cart {
+    //   min-width: 200px;
+    // }
+
+    &--catalog,
+    &--order {
+      // background-color: $bg-grey;
+      margin-top: 70px;
+      padding-top: 30px;
+
+      & .main-nav__link {
+        font-size: 15px;
+        // padding-right: 10px;
+      }
+    }
+
+    &--cart {
+      margin-left: auto;
+    }
+
+    &--catalog .main-nav__link {
+      padding-right: 20px;
+    }
+
+    &--order .main-nav__link {
+      padding-right: 20px;
+    }
+
+    &--search .main-nav__link {
+      padding-right: 20px;
+    }
+
+    &--new,
+    &--sale {
+      width: auto;
+    }
+
+    &--search .main-nav__link {
+      font-size: 0;
+    }
+  }
+
+  .main-nav__list--wrap-new-sale {
+    // background-color: $bg-grey;
+    margin-top: -72px;
+    padding-top: 20px;
+  }
+
+  .main-nav__text {
+    display: inline-block;
+    font-size: 15px;
+    margin: 0;
+    margin-left: auto;
+  }
+}
+
+@media (min-width: $w--desctop) {
+  // Меняем ширину контейнера.
+  .main-nav__wrapper {
+    width: $w--desctop;
+  }
+
+  .main-nav__item {
+    &--catalog,
+    &--order {
+      margin: 0;
+      padding-top: 30px;
+
+      & .main-nav__link {
+        font-size: 17px;
+      }
+    }
+
+    &--new,
+    &--sale {
+      padding: 0;;
+    }
+
+    &--catalog .main-nav__link {
+      padding-right: 70px;
+    }
+
+    &--new .main-nav__link {
+      padding-right: 62px;
+    }
+
+    &--order .main-nav__link {
+      padding-right: 20px;
+    }
+
+    &--search .main-nav__link {
+      padding-right: 20px;
+    }
+  }
+
+  .main-nav__list--wrap-new-sale {
+    margin-top: 0;
+
+    & .main-nav__link {
+      font-size: 15px;
+    }
+  }
 }

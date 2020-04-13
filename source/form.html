@@ -9,27 +9,42 @@
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-img" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип интернет-магазина Мишка">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle visually-hidden">Открыть меню</button>
-
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="form.html">Вязание на заказ</a>
-          </li>
-          <li class="main-nav__item main-nav__item--search">
-            <a class="main-nav__link" href="">Поиск по сайту</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="">Корзина: пока пуста</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="page-header__wrapper">
+        <div class="page-header__logo-wrapper">
+          <a class="page-header__logo" href="index.html">
+            <!-- <img class="page-header__logo-img" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип интернет-магазина Мишка"> -->
+          </a>
+        </div>
+        <nav class="main-nav">
+          <div class="main-nav__wrapper">
+            <button class="main-nav__toggle visually-hidden">Открыть меню</button>
+  
+            <ul class="main-nav__list main-nav__list--wrap-catalog-order-cart">
+              <li class="main-nav__item main-nav__item--catalog">
+                <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
+              </li>
+              <li class="main-nav__item main-nav__item--order">
+                <a class="main-nav__link" href="form.html">Вязание на заказ</a>
+              </li>
+              <li class="main-nav__item main-nav__item--search">
+                <a class="main-nav__link" href="">Поиск по сайту</a>
+              </li>
+              <li class="main-nav__item main-nav__item--cart">
+                <a class="main-nav__link" href="">Корзина: пока пуста</a>
+              </li>
+            </ul>
+            <ul class="main-nav__list main-nav__list--wrap-new-sale">
+              <li class="main-nav__item main-nav__item--new">
+                <a class="main-nav__link" href="">Новые поступления</a>
+              </li>
+              <li class="main-nav__item main-nav__item--sale">
+                <a class="main-nav__link" href="">Распродажа</a>
+              </li>
+              <p class="main-nav__text">Бесплатная доставка по России</p>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </header>
 
     <main class="main">
@@ -37,14 +52,17 @@
     </main>
 
     <footer class="page-footer">
-      <ul class="page-footer__list social-list">
-        <li class="social-list__item social-list__item--inst"><a href="" aria-label="Мы в Instagram"></a></li>
-        <li class="social-list__item social-list__item--fb"><a href="" aria-label="Мы в Facebook"></a></li>
-        <li class="social-list__item social-list__item--tw"><a href="" aria-label="Мы в Twitter"></a></li>
-      </ul>
-      <div class="page-footer__developer developer">
-        <a class="developer__link" href="">Разработано</a>
-        <!-- svg-иконка -->
+      <div class="page-footer__wrapper">
+        <a href="index.html" class="page-footer__logo"></a>
+        <ul class="page-footer__list social-list">
+          <li class="social-list__item social-list__item--inst"><a href="" aria-label="Мы в Instagram"></a></li>
+          <li class="social-list__item social-list__item--fb"><a href="" aria-label="Мы в Facebook"></a></li>
+          <li class="social-list__item social-list__item--tw"><a href="" aria-label="Мы в Twitter"></a></li>
+        </ul>
+        <div class="page-footer__developer developer">
+          <a class="developer__link" href="">Разработано</a>
+          <!-- svg-иконка -->
+        </div>
       </div>
     </footer>
   </body>

@@ -24,3 +24,37 @@
   @include font($font--bold, 19px, 1);
   color: $white;
 }
+
+@media (min-width: $w--tablet) {
+  .category {
+    margin: 0;
+    width: auto;  
+  }
+
+  .category-list {
+    display: flex;
+    flex-direction: row;
+    width: $w--tablet-wrapper
+    margin: 0 auto;
+    margin-top: -100px;
+  }
+
+  .category-list__link {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: $w--desctop) {
+  .category-list {
+    width: $w--desctop-wrapper;
+  }
+
+  .category-list__link {
+    display: block;
+    width: 150px;
+  }
+
+  .category-list__item {
+    padding-right: 345px;
+  }
+}

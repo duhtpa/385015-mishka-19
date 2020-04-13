@@ -9,9 +9,15 @@ $product-color: #ededed;
 $social-color: #e5e5e5;
 $white: #ffffff;
 
-$font--normal: "OpenSans", "Arial Black", sans-serif;
 $font--bold: "OpenSans--Bold", "Arial Black", sans-serif;
+$font--normal: "OpenSans", "Arial Black", sans-serif;
+
+$font--desctop: 53px;
+$font--tablet: 43px;
 
 $w--desctop: 1150px;
 $w--mobile: 320px;
 $w--tablet: 768px;
+
+$w--desctop-wrapper: 1050px;
+$w--tablet-wrapper: 668px;

@@ -67,3 +67,103 @@
   text-align: center;
   text-transform: uppercase;
 }
+
+@media (min-width: $w--tablet) {
+  .week-offer{
+    margin: 0;
+    padding: 0;
+    width: auto;
+  }
+
+  .week-offer__description {
+    font-size: 17px;
+  }
+
+  .week-offer__footer {
+    margin-top: -130px;
+  }
+
+  .week-offer__header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    min-width: 100%;
+  }
+
+  .week-offer__img {
+    width: 320px;
+    height: auto;
+  }
+
+  .week-offer__parameters {
+    padding-top: 20px;
+  }
+
+  .week-offer__price {
+    font-size: 20px;
+  }
+
+  .week-offer__text {
+    width: 80px;
+    text-align: center;
+  }
+
+  .week-offer__title {
+    font-size: $font--tablet;
+  }
+
+  .week-offer__wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: $w--tablet-wrapper;
+  }
+
+  .week-offer__wrapper-description {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 300px;
+    width: 310px;
+  }
+}
+
+@media (min-width: $w--desctop) {
+  .week-offer__img {
+    width: 525px;
+    height: 636px;
+    z-index: -1;
+  }
+
+  .week-offer__footer {
+    margin-left: 160px;
+  }
+
+  .week-offer__header {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    margin-bottom: -150px;
+  }
+
+  .week-offer__text {
+    margin-left: 25px;
+    margin-right: 30px;
+    width: 100px;
+  }
+
+  .week-offer__title {
+    font-size: $font--desctop;
+  }
+
+  .week-offer__wrapper {
+    width: $w--desctop-wrapper;
+  }
+
+  .week-offer__wrapper-description{
+    margin-top: 160px;
+    margin-left: 160px;
+  }
+}

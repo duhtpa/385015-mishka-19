@@ -9,36 +9,42 @@
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo" href="">
-        <img class="page-header__logo-img" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип интернет-магазина Мишка">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle visually-hidden">Открыть меню</button>
-
-        <ul class="main-nav__list main-nav__list--wrap-catalog-order-cart">
-          <li class="main-nav__item main-nav__item--catalog">
-            <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
-          </li>
-          <li class="main-nav__item main-nav__item--order">
-            <a class="main-nav__link" href="form.html">Вязание на заказ</a>
-          </li>
-          <li class="main-nav__item main-nav__item--search">
-            <a class="main-nav__link" href="">Поиск по сайту</a>
-          </li>
-          <li class="main-nav__item main-nav__item--cart">
-            <a class="main-nav__link" href="">Корзина: пока пуста</a>
-          </li>
-        </ul>
-        <!-- <ul class="main-nav__list main-nav__list--wrap-new-sale">
-          <li class="main-nav__item main-nav__item--new">
-            <a class="main-nav__link" href="">Новые поступления</a>
-          </li>
-          <li class="main-nav__item main-nav__item--sale">
-            <a class="main-nav__link" href="">Распродажа</a>
-          </li>
-          <p class="main-nav__text">Бесплатная доставка по России</p>
-        </ul> -->
-      </nav>
+      <div class="page-header__wrapper">
+        <div class="page-header__logo-wrapper">
+          <a class="page-header__logo" href="index.html">
+            <!-- <img class="page-header__logo-img" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип интернет-магазина Мишка"> -->
+          </a>
+        </div>
+        <nav class="main-nav">
+          <div class="main-nav__wrapper">
+            <button class="main-nav__toggle visually-hidden">Открыть меню</button>
+  
+            <ul class="main-nav__list main-nav__list--wrap-catalog-order-cart">
+              <li class="main-nav__item main-nav__item--catalog">
+                <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
+              </li>
+              <li class="main-nav__item main-nav__item--order">
+                <a class="main-nav__link" href="form.html">Вязание на заказ</a>
+              </li>
+              <li class="main-nav__item main-nav__item--search">
+                <a class="main-nav__link" href="">Поиск по сайту</a>
+              </li>
+              <li class="main-nav__item main-nav__item--cart">
+                <a class="main-nav__link" href="">Корзина: пока пуста</a>
+              </li>
+            </ul>
+            <ul class="main-nav__list main-nav__list--wrap-new-sale">
+              <li class="main-nav__item main-nav__item--new">
+                <a class="main-nav__link" href="">Новые поступления</a>
+              </li>
+              <li class="main-nav__item main-nav__item--sale">
+                <a class="main-nav__link" href="">Распродажа</a>
+              </li>
+              <p class="main-nav__text">Бесплатная доставка по России</p>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </header>
 
     <main class="main">
@@ -59,55 +65,64 @@
       </section>
 
       <article class="week-offer">
-        <header class="week-offer__header">
-          <h2 class="week-offer__title">Вязаные корзинки</h2>
-          <span class="week-offer__text">Товар недели</span>
-        </header>
-        <p class="week-offer__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трех размерах.</p>
-        <table class="week-offer__parameters table_parameters">
-          <tr class="offer-parameters__row">
-            <td class="offer-parameters__cell offer-parameters__cell--left">Цвет:</td>
-            <td class="offer-parameters__cell">&laquo;Тиффани&raquo;/серый</td>
-          </tr>
-          <tr class="offer-parameters__row">
-            <td class="offer-parameters__cell offer-parameters__cell--left">Диаметр:</td>
-            <td class="offer-parameters__cell">25 см</td>
-          </tr>
-          <tr class="offer-parameters__row">
-            <td class="offer-parameters__cell offer-parameters__cell--left">Высота:</td>
-            <td class="offer-parameters__cell">15 см</td>
-          </tr>
-        </table>
-        <img class="week-offer__img" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Вязаные корзинки">
-        <footer class="week-offer__footer">
-          <p class="week-offer__price">Цена: 990 руб.</p>
-          <a class="week-offer__buy" href="">Заказать</a>
-        </footer>
+        <div class="week-offer__wrapper">
+          <header class="week-offer__header">
+            <h2 class="week-offer__title">Вязаные корзинки</h2>
+            <span class="week-offer__text">Товар недели</span>
+          </header>
+          <div class="week-offer__wrapper-description">
+            <p class="week-offer__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трех размерах.</p>
+            <table class="week-offer__parameters table_parameters">
+              <tr class="offer-parameters__row">
+                <td class="offer-parameters__cell offer-parameters__cell--left">Цвет:</td>
+                <td class="offer-parameters__cell">&laquo;Тиффани&raquo;/серый</td>
+              </tr>
+              <tr class="offer-parameters__row">
+                <td class="offer-parameters__cell offer-parameters__cell--left">Диаметр:</td>
+                <td class="offer-parameters__cell">25 см</td>
+              </tr>
+              <tr class="offer-parameters__row">
+                <td class="offer-parameters__cell offer-parameters__cell--left">Высота:</td>
+                <td class="offer-parameters__cell">15 см</td>
+              </tr>
+            </table>
+          </div>
+          <img class="week-offer__img" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Вязаные корзинки">
+          <footer class="week-offer__footer">
+            <p class="week-offer__price">Цена: 990 руб.</p>
+            <a class="week-offer__buy" href="">Заказать</a>
+          </footer>
+        </div>
       </article>
 
       <section class="about">
-        <h2 class="about__title">Коротко о нас:</h2>
-        <ul class="about__list about-list">
-          <li class="about-list__item">Экологически чистые материалы</li>
-          <li class="about-list__item">Скандинавский стиль по российской цене</li>
-          <li class="about-list__item">Увеличивает лайки на фотографиях</li>
-          <li class="about-list__item">Связано вручную с любовью и умилением</li>
-          <li class="about-list__item">Поддержка отечественного производителя</li>
-          <li class="about-list__item">Поставляется в подарочной упаковке</li>
-        </ul>
+        <div class="about__wrapper">
+          <h2 class="about__title">Коротко о нас:</h2>
+          <ul class="about__list about-list">
+            <li class="about-list__item">Экологически чистые материалы</li>
+            <li class="about-list__item">Скандинавский стиль по российской цене</li>
+            <li class="about-list__item">Увеличивает лайки на фотографиях</li>
+            <li class="about-list__item">Связано вручную с любовью и умилением</li>
+            <li class="about-list__item">Поддержка отечественного производителя</li>
+            <li class="about-list__item">Поставляется в подарочной упаковке</li>
+          </ul>
+        </div>
       </section>
 
     </main>
 
     <footer class="page-footer">
-      <ul class="page-footer__list social-list">
-        <li class="social-list__item social-list__item--inst"><a href="" aria-label="Мы в Instagram"></a></li>
-        <li class="social-list__item social-list__item--fb"><a href="" aria-label="Мы в Facebook"></a></li>
-        <li class="social-list__item social-list__item--tw"><a href="" aria-label="Мы в Twitter"></a></li>
-      </ul>
-      <div class="page-footer__developer developer">
-        <a class="developer__link" href="">Разработано</a>
-        <!-- svg-иконка -->
+      <div class="page-footer__wrapper">
+        <a href="index.html" class="page-footer__logo"></a>
+        <ul class="page-footer__list social-list">
+          <li class="social-list__item social-list__item--inst"><a href="" aria-label="Мы в Instagram"></a></li>
+          <li class="social-list__item social-list__item--fb"><a href="" aria-label="Мы в Facebook"></a></li>
+          <li class="social-list__item social-list__item--tw"><a href="" aria-label="Мы в Twitter"></a></li>
+        </ul>
+        <div class="page-footer__developer developer">
+          <a class="developer__link" href="">Разработано</a>
+          <!-- svg-иконка -->
+        </div>
       </div>
     </footer>
   </body>
