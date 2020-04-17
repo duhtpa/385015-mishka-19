@@ -1,17 +1,21 @@
 .developer {
-  @include mobile--first();
-  // @include padding-v(31px, 22px);
-  padding-left: 39px;
+  align-items: center;
+  display: flex;
+  padding-top: 30px;
 }
 
 .developer__link {
-  @include font($font--bold, 19px, 0.9);
+  @include font(0.9, 19px, 700);
   color: $black;
+}
+
+.developer__logo {
+  margin-left: 30px;
+  fill: #63d1bb;
 }
 
 @media (min-width: $w--tablet) {
   .developer {
-    // @include padding-v(60px, 50px);
-    margin: 0;
+    padding: 0;
   }
 }
