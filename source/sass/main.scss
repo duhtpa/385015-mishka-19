@@ -41,7 +41,7 @@
   }
 
   .intro {
-    padding-top: 15px;
+    padding-top: 30px;
 
     &--bg {
       background-position: center top;
@@ -66,6 +66,8 @@
 
 @media (min-width: $w--desctop) {
   .intro {
+    padding-top: 20px;
+
     &--bg {
       background-size: 1180px;
       height: 746px;

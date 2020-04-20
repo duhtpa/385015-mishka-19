@@ -35,6 +35,11 @@
     width: 102px;
   }
 
+  .page-footer__logo-img {
+    height: 34px;
+    width: 102px;
+  }
+
   .page-footer__list,
   .page-footer__developer {
     margin: 0;
@@ -47,9 +52,6 @@
 }
 
 @media (min-width: $w--desctop) {
-  .page-footer {
-  }
-
   .page-footer__logo {
     width: 120px;
     margin-left: -10px;
