@@ -1,17 +1,19 @@
 html {
   box-sizing: border-box;
-  font-family: $font--normal;
+  font-family: $font--main;
 }
 
-*, *::before, *::after { 
-  box-sizing: inherit; 
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
 a {
   text-decoration: none;
 }
 
-img { 
+img {
   height: auto;
   max-width: 100%;
 }
@@ -26,3 +28,5 @@ img {
   position: absolute;
   width: 1px;
 }
+
+@include wrapper();

@@ -1,21 +1,80 @@
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
 .intro {
   background-color: $bg-grey;
-  min-width: 320px;
-  
+
   &--bg {
-    @include padding-v(120px, 76px);
-    background-image: url(../img/hero-mobile@1x.jpg);
+    background-color: $bg-grey--light;
+    background-image: url("../img/hero-mobile@1x.jpg");
     background-position: center top;
-    background-size: 165%;
-    height: 280px;
+    background-repeat: no-repeat;
+    background-size: 540px;
+    height: 476px;
+
+    & .intro__title {
+      padding-top: 80px;
+    }
   }
 }
 
+.intro__text {
+  font-size: 0;
+  text-align: end;
+}
+
 .intro__title {
-  @include font($font--bold, 26px, 1.1);
-  @include padding-v(75px, 75px);
+  @include font(1.1, 26px, 700);
+  @include padding-v(55px, 55px);
+  @include padding-h(30px, 30px);
   color: $black;
   margin: auto;
   text-align: center;
-  width: 280px;
+}
+
+@media (min-width: $w--tablet) {
+  .main {
+    margin-top: -10px;
+    width: auto;
+  }
+
+  .intro {
+    padding-top: 30px;
+
+    &--bg {
+      background-position: center top;
+      background-size: 1270px;
+      height: 790px;
+
+      & .intro__title {
+        padding-top: 140px;
+      }
+    }
+  }
+
+  .intro__text {
+    font-size: 15px;
+  }
+
+  .intro__title {
+    @include padding-h(50px, 50px);
+    font-size: $font--tablet;
+  }
+}
+
+@media (min-width: $w--desctop) {
+  .intro {
+    padding-top: 20px;
+
+    &--bg {
+      background-size: 1180px;
+      height: 746px;
+    }
+  }
+
+  .intro__title {
+    font-size: $font--desctop;
+  }
 }

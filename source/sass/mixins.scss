@@ -1,21 +1,26 @@
-@mixin font($ff, $fz, $lh) {
-  font-family: $ff;
-  font-size: $fz;
-  line-height: $lh;
-}
-
-@mixin list($ls: none, $m: 0, $p: 0) {
-  list-style: $ls;
-  margin: $m;
-  padding: $p;
-}
-
 @mixin border($size: 2px, $type: solid, $color: $black) {
   border: $size $type $color;
 }
 
 @mixin border-b($size: 2px, $type: solid, $color: $offer-color) {
   border-bottom: $size $type $color;
+}
+
+@mixin font($lh, $fz, $fw: 400) {
+  line-height: $lh;
+  font-size: $fz;
+  font-weight: $fw;
+}
+
+@mixin indent--null {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin list($ls: none, $m: 0, $p: 0) {
+  list-style: $ls;
+  margin: $m;
+  padding: $p;
 }
 
 @mixin margin-h($ml, $mr) {
@@ -33,7 +38,18 @@
   padding-top: $pt;
 }
 
-@mixin indent--null {
-  margin: 0;
-  padding: 0;
+@mixin wrapper {
+  .wrapper {
+    margin: 0 auto;
+    width: $w--mobile;
+
+    @media (min-width: $w--tablet) {
+      @include padding-h(50px, 50px);
+      width: $w--tablet;
+    }
+
+    @media (min-width: $w--desctop) {
+      width: $w--desctop;
+    }
+  }
 }

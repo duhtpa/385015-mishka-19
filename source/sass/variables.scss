@@ -1,5 +1,6 @@
 $black: #000000;
 $bg-grey: #f1f1f1;
+$bg-grey--light: #f9f9f9;
 $bg-green--light: #63d1bb;
 $bg-green--darker: #56c3b2;
 $gray--dark: #444444;
@@ -9,7 +10,14 @@ $product-color: #ededed;
 $social-color: #e5e5e5;
 $white: #ffffff;
 
-$main-font: "OpenSans", "Arial", sans-serif;
+$font--main: "OpenSans", "Arial", sans-serif;
 
-$font--normal: "OpenSans", "Arial Black", sans-serif;
-$font--bold: "OpenSans--Bold", "Arial Black", sans-serif;
+$font--desctop: 53px;
+$font--tablet: 43px;
+
+$w--desctop: 1150px;
+$w--mobile: 320px;
+$w--tablet: 768px;
+
+$w--desctop-wrapper: 1050px;
+$w--tablet-wrapper: 668px;

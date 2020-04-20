@@ -4,17 +4,168 @@
 
 .main-nav__list {
   @include list();
+  display: flex;
   text-align: center;
+  flex-direction: column;
+}
+
+.main-nav__list--wrap-new-sale {
+  height: 0;
+}
+
+.main-nav__list--wrap-new-sale .main-nav__link,
+.main-nav__text {
+  font-size: 0;
 }
 
 .main-nav__item {
   border-top: 1px solid $nav-color;
-  @include padding-v(31px, 31px);
+  width: 100%;
+
+  &--new,
+  &--sale,
+  &--new .main-nav__link,
+  &--sale .main-nav__link {
+    border: none;
+    font-size: 0;
+    padding: 0;
+  }
+}
+
+.main-nav__link,
+.main-nav__logo {
+  @include padding-v(30px, 30px);
+  @include font(1.4, 17px, 700);
+  color: $black;
+  display: inline-block;
+  text-align: center;
   width: 100%;
 }
 
-.main-nav__link {
-  @include font($font--bold, 17px, 1.4);
-  color: $black;
-  text-align: center;
+@media (min-width: $w--tablet) {
+  .main-nav__list {
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: -80px;
+    min-height: 70px;
+  }
+
+  .main-nav__item {
+    border-top: none;
+    padding: 0;
+    width: auto;
+
+    &--catalog,
+    &--order {
+      & .main-nav__link {
+        font-size: 15px;
+      }
+    }
+
+    &--cart,
+    &--search {
+      margin-left: auto;
+    }
+
+    &--search .main-nav__link {
+      font-size: 0;
+      padding-right: 20px;
+      width: 85px;
+    }
+  }
+
+  .main-nav__logo-img {
+    width: 113px;
+  }
+
+  .main-nav__text {
+    display: inline-block;
+    font-size: 15px;
+    margin: 0;
+    margin-left: auto;
+    margin-top: -20px;
+  }
+}
+
+@media (min-width: $w--tablet) and (max-width: $w--desctop - 1) {
+  .main-nav__item {
+    &--cart {
+      width: 250px;
+
+      & .main-nav__link {
+        text-align: right;
+      }
+    }
+
+    &--catalog,
+    &--order {
+      order: 2;
+      z-index: 3;
+    }
+
+    &--cart,
+    &--logo,
+    &--search {
+      order: 1;
+    }
+
+    &--search .main-nav__link {
+      width: 200px;
+    }
+
+    &--order {
+      margin-left: 40px;
+    }
+  }
+}
+
+@media (min-width: $w--desctop) {
+  .main-nav__list {
+    margin-bottom: -40px; //temporary
+  }
+
+  .main-nav__item {
+    &--cart,
+    &--catalog,
+    &--order {
+      & .main-nav__link {
+        font-size: 17px;
+      }
+    }
+
+    &--catalog,
+    &--order {
+      order: -1;
+    }
+
+    &--new,
+    &--sale {
+      z-index: 3;
+
+      & .main-nav__link {
+        font-size: 15px;
+      }
+    }
+
+    &--catalog {
+      margin-right: 40px;
+    }
+
+    &--new .main-nav__link {
+      padding-right: 35px;
+    }
+
+    &--order {
+      margin-right: 100px;
+    }
+  }
+
+  .main-nav__logo-img {
+    width: 149px;
+  }
+
+  .main-nav__text {
+    padding-top: 80px;
+  }
 }
