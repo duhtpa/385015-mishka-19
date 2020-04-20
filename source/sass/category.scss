@@ -1,9 +1,6 @@
-.category {
-  @include mobile--first();
-}
-
 .category-list {
   @include list();
+  margin-top: -196px;
 }
 
 .category-list__item {
@@ -21,7 +18,7 @@
 }
 
 .category-list__link {
-  @include font($font--bold, 19px, 1);
+  @include font(1, 19px, 700);
   color: $white;
 }
 
@@ -34,9 +31,9 @@
   .category-list {
     display: flex;
     flex-direction: row;
-    width: $w--tablet-wrapper;
     margin: 0 auto;
     margin-top: -100px;
+    width: $w--tablet-wrapper;
   }
 
   .category-list__link {

@@ -1,6 +1,6 @@
 html {
   box-sizing: border-box;
-  font-family: $font--normal;
+  font-family: $font--main;
 }
 
 *,
@@ -28,3 +28,5 @@ img {
   position: absolute;
   width: 1px;
 }
+
+@include wrapper();

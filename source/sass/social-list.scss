@@ -1,8 +1,12 @@
 .social-list {
-  @include mobile--first();
-  // @include padding-v(26px, 26px);
+  align-items: center;
   border-bottom: 1px solid $social-color;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 20px;
 }
 
 .social-list__item {
@@ -13,8 +17,9 @@
   margin-right: 40px;
 }
 
-// @media (min-width: $w--tablet) {
-//   .social-list {
-//     @include padding-v(60px, 50px);
-//   }
-// }
+@media (min-width: $w--tablet) {
+  .social-list {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+}
