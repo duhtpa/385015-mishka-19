@@ -1,1 +1,5 @@
-// ЗДЕСЬ БУДЕТ КОД... КОГДА-НИБУДЬ ПОТОМ
+@media (max-width: $w--tablet - 1) {
+  .page-header {
+    width: auto;
+  }
+}

@@ -1,7 +1,7 @@
 .developer {
   align-items: center;
   display: flex;
-  padding-top: 30px;
+  padding-top: 20px;
 }
 
 .developer__link {
@@ -17,5 +17,6 @@
 @media (min-width: $w--tablet) {
   .developer {
     padding: 0;
+    padding-top: 3px;
   }
 }

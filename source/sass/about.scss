@@ -4,72 +4,163 @@
 
 .about__list {
   @include list();
-  @include padding-v(34px, 34px);
+  padding-top: 20px;
+  // @include padding-v(34px, 34px);
+}
+
+.about-list {
+  &--flower,
+  &--ball,
+  &--money,
+  &--rocket,
+  &--heart,
+  &--gift {
+    position: relative;
+
+    & path {
+      fill: $fill--features;
+    }
+  }
+
+  &--flower .svg__wrapper {
+    bottom: -1px;
+    left: -3px;
+  }
+
+  &--ball .svg__wrapper {
+    bottom: -3px;
+    left: -6px;
+  }
+
+  &--money .svg__wrapper {
+    bottom: -1px;
+    left: -3px;
+  }
+
+  &--rocket .svg__wrapper {
+    bottom: -5px;
+    left: -6px;
+  }
+
+  &--heart .svg__wrapper {
+    bottom: -7px;
+    left: -3px;
+  }
+
+  &--gift .svg__wrapper {
+    bottom: -2px;
+    left: -8px;
+  }
 }
 
 .about__title {
   @include font(1.2, 25px, 700);
+  margin: 0; //temp
+  margin-left: -2px;
 }
 
 .about-list__item {
   @include font(1.2, 17px, 700);
-  padding-top: 88px;
+  padding-top: 11px;
+}
+
+.svg__wrapper {
+  height: 38px;
+  position: relative;
+
+  & svg {
+    width: 54px;
+  }
 }
 
 @media (min-width: $w--tablet) {
   .about {
     @include padding-h(50px, 50px);
+    @include padding-v(50px, 47px);
   }
 
   .about__list {
     display: flex;
     flex-wrap: wrap;
+    padding-top: 11px;
   }
 
   .about-list__item {
     font-size: 20px;
+    line-height: 1.1;
+    padding-top: 33px;
     width: 50%;
   }
 
   .about__title {
     font-size: $font--tablet;
+    letter-spacing: -0.2px;
+    margin-left: -4px;
   }
 
   .about-list {
     &--flower {
       order: 1;
+
+      & .svg__wrapper {
+        bottom: -4px;
+      }
     }
 
     &--ball {
       order: 2;
+
+      & .svg__wrapper {
+        bottom: -6px;
+      }
     }
 
     &--money {
       order: 3;
+
+      & .svg__wrapper {
+        bottom: -5px;
+      }
     }
 
     &--rocket {
       order: 4;
+
+      & .svg__wrapper {
+        bottom: -8px;
+      }
     }
 
     &--heart {
       order: 5;
+
+      & .svg__wrapper {
+        bottom: -10px;
+      }
     }
 
     &--gift {
       order: 6;
+
+      & .svg__wrapper {
+        bottom: -6px;
+      }
     }
   }
 }
 
 @media (min-width: $w--desctop) {
   .about {
-    @include padding-h(210px, 210px);
-    padding-top: 100px;
+    @include padding-h(225px, 225px);
+    padding-top: 57px;
+  }
+
+  .about__list {
+    padding-top: 8px;
   }
 
   .about-list__item {
-    width: 45%;
+    width: 50%;
   }
 
   .about__title {

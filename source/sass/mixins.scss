@@ -6,6 +6,14 @@
   border-bottom: $size $type $color;
 }
 
+@mixin br--mobile-only {
+  .br--mobile-only {
+    @media (max-width: $w--tablet - 1) {
+      display: none;
+    }
+  }
+}
+
 @mixin font($lh, $fz, $fw: 400) {
   line-height: $lh;
   font-size: $fz;

@@ -5,8 +5,9 @@
   flex-wrap: wrap;
   justify-content: center;
   margin: 0;
+  margin-left: -5px;
   padding: 0;
-  padding-bottom: 20px;
+  padding-bottom: 23px;
 }
 
 .social-list__item {
@@ -20,6 +21,7 @@
 @media (min-width: $w--tablet) {
   .social-list {
     border-bottom: none;
-    padding-bottom: 0;
+    @include padding-v(0px, 9px)
+    padding-left: 83px;
   }
 }

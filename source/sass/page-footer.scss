@@ -1,5 +1,5 @@
 .page-footer {
-  @include padding-v(31px, 25px);
+  @include padding-v(26px, 8px);
   background-color: $bg-grey;
   display: flex;
   flex-direction: column;
@@ -20,7 +20,7 @@
 
 @media (min-width: $w--tablet) {
   .page-footer {
-    @include padding-v(55px, 55px);
+    @include padding-v(55px, 52px);
     flex-direction: row;
     justify-content: space-between;
     margin: 0 auto;

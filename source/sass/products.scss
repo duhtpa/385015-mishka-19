@@ -7,11 +7,17 @@
 .products-list__item {
   @include list();
   display: flex;
-  padding-top: 30px;
+  padding-top: 31px;
 }
 
 .products-item {
   border: 1px solid $product-color;
+}
+
+.products-item__buy-img {
+  & path {
+    fill: $grey;;
+  }
 }
 
 .products-item__img {
@@ -19,14 +25,14 @@
 }
 
 .product-item__bottom {
-  @include padding-v(30px, 27px);
+  @include padding-v(27px, 21px);
   border-top: 1px solid $product-color;
   display: flex;
   justify-content: space-between;
 }
 
 .product-item__top {
-  @include padding-v(26px, 32px);
+  @include padding-v(18px, 23px);
 }
 
 .products-item__title {
@@ -38,7 +44,7 @@
   @include font(2.3, 13px, null);
   @include indent--null();
   color: $gray--dark;
-  padding-top: 10px;
+  padding-top: 8px;
 }
 
 .products-item__price {
@@ -47,13 +53,14 @@
 }
 
 .product-item__wrap {
-  @include padding-h(30px, 30px);
+  @include padding-h(27px, 27px);
   flex-grow: 1;
 }
 
 @media (min-width: $w--tablet) {
   .products {
     margin: 0 auto;
+    padding-top: 15px;
     width: $w--tablet;
   }
 
@@ -62,8 +69,15 @@
     height: 335px;
   }
 
+  .product-item__bottom {
+    padding-bottom: 25px;
+    padding-left: 4px;
+    padding-top: 21px;
+  }
+
   .products-item__desc {
     font-size: 15px;
+    // padding-top: 0;
   }
 
   .products-item__img {
@@ -77,6 +91,7 @@
 
   .products-item__title {
     font-size: 20px;
+    line-height: 1.15;
   }
 
   .product-item__wrap {
@@ -90,11 +105,16 @@
     margin: 0 auto;
     padding: 0;
   }
+
+  .products-list__item {
+    padding-top: 53px;
+  }
 }
 
 @media (min-width: $w--desctop) {
   .products {
     margin: 0 auto;
+    padding-top: 56px;
     width: auto;
   }
 
@@ -111,14 +131,30 @@
     width: 316px;
   }
 
+  .product-item__bottom {
+    padding-left: 0;
+  }
+
+  .products-item__buy-img {
+    margin-right: 21px;
+  }
+
+  .products-item__desc {
+    padding-top: 3px;
+  }
+
   .products-item__img {
     height: 462px;
     width: 316px;
   }
 
-  .product-item__wrap {
-    min-height: 243px;
+  .product-item__top {
+    padding-bottom: 13px;
   }
+
+  // .product-item__wrap {
+  //   // min-height: 243px;
+  // }
 
   .products-list__item {
     margin-left: 50px;
