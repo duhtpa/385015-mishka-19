@@ -125,6 +125,7 @@
 @media (max-width: $w--tablet - 1) {
   .main-nav__link {
     @include padding-v(29px, 26px);
+    padding-right: 35px;
   }
 
   .main-nav--closed .main-nav__item:not(:first-of-type) {
