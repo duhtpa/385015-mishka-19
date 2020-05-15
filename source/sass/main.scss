@@ -5,6 +5,8 @@
 
 .intro {
   background-color: $bg-grey;
+  border-top: 1px solid $border--nav;
+  // margin-top: -8px;
 
   &--bg {
     background-color: $bg-grey--light;
@@ -12,10 +14,10 @@
     background-position: center top;
     background-repeat: no-repeat;
     background-size: 540px;
-    height: 476px;
+    height: 490px;
 
     & .intro__title {
-      padding-top: 80px;
+      padding-top: 71px;
     }
   }
 }
@@ -26,30 +28,41 @@
 }
 
 .intro__title {
-  @include font(1.1, 26px, 700);
-  @include padding-v(55px, 55px);
+  @include font(1.2, 26px, 700);
+  @include padding-v(75px, 70px);
   @include padding-h(30px, 30px);
   color: $black;
+  letter-spacing: 0.7px;
   margin: auto;
   text-align: center;
 }
 
+.zigzag--line {
+  background-image: url("../img/bg-zigzag-line.svg");
+  background-position: 10px;
+  background-size: contain;
+  height: 6px;
+  margin-bottom: 27px;
+  z-index: 1;
+}
+
 @media (min-width: $w--tablet) {
   .main {
-    margin-top: -10px;
+    margin-top: 40px;
     width: auto;
   }
 
   .intro {
-    padding-top: 30px;
+    padding-top: 20px;
 
     &--bg {
       background-position: center top;
       background-size: 1270px;
-      height: 790px;
+      height: 745px;
 
       & .intro__title {
-        padding-top: 140px;
+        padding-top: 114px;
+        letter-spacing: 0.2px;
       }
     }
   }
@@ -60,13 +73,36 @@
 
   .intro__title {
     @include padding-h(50px, 50px);
+    @include padding-v(83px, 55px);
     font-size: $font--tablet;
+    letter-spacing: 0;
+  }
+
+  .zigzag--fill {
+    background-image: url("../img/bg-zigzag-fill.svg");
+    // background-position: 0px;
+    background-size: contain;
+    height: 23px;
+    margin-top: -13px;
+    z-index: 1;
+  }
+
+  .zigzag--line {
+    background-position: 20px;
+    background-size: contain;
+    height: 15px;
+    margin-bottom: 2px;
   }
 }
 
 @media (min-width: $w--desctop) {
+  .main {
+    margin-top: 0;
+  }
+
   .intro {
     padding-top: 20px;
+    margin-top: -2px;
 
     &--bg {
       background-size: 1180px;
@@ -76,5 +112,21 @@
 
   .intro__title {
     font-size: $font--desctop;
+    line-height: 1.15;
+    padding-bottom: 103px;
+  }
+
+  .zigzag--fill {
+    background-position: 17px;
+    background-size: 1240px;
+    // background-repeat: no-repeat;
+    height: 34px;
+    margin-top: -16px;
+  }
+
+  .zigzag--line {
+    background-position: 25px;
+    background-size: 1045px;
+    height: 21px;
   }
 }

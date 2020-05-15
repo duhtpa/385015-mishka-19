@@ -1,0 +1,167 @@
+.production {
+  @include padding-h(30px, 30px);
+  margin-bottom: 57px;
+}
+
+.production-article {
+  border: 1px solid $product-color;
+  padding-bottom: 33px;
+}
+
+.production__buy {
+  width: 192px;
+  margin: 0 auto;
+}
+
+.production__preview {
+  display: block;
+  height: 150px;
+  width: 260px;
+  position: relative;
+
+  &::before {
+    background-image: url("../img/icon-play.svg");
+    background-repeat: no-repeat;
+    content: "";
+    display: block;
+    height: 77px;
+    left: 80px;
+    position: absolute;
+    top: 37px;
+    width: 110px;
+  }
+}
+
+.production__text {
+  font-size: 13px;
+  line-height: 1.9;
+  margin-bottom: 25px;
+  padding-left: 33px;
+  padding-right: 40px;
+  padding-top: 13px;
+}
+
+.production__title {
+  font-size: 17px;
+  line-height: 1.5;
+  margin-bottom: 23px;
+  padding-left: 90px;
+  padding-top: 11px;
+  position: relative;
+
+  &-img {
+    // background-image: url("../img/icon-video.svg");
+    // background-repeat: no-repeat;
+    // content: "";
+    // display: block;
+    height: 32px;
+    left: 34px;
+    position: absolute;
+    top: 18px;
+    width: 32px;
+
+    & path {
+      fill: #63d1bb;
+    }
+  }
+}
+
+@media (min-width: $w--tablet) {
+  .production {
+    @include padding-h(50px, 50px);
+    padding-bottom: 6px;
+    padding-top: 50px;
+  }
+
+  .production-article {
+    // @include padding-h(40px, 40px);
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 45px;
+  }
+
+  .production__buy {
+    margin: 0 40px;
+    width: 100%;
+  }
+
+  .production__preview {
+    border-bottom: 1px dashed #cccccc; //т.к. здесь при адаптиве соотношние сторон отиличается, пока адаптивной графики нет сделал бордер чтоб понимать где кончается обёртка
+    height: 455px; // то же самое - адаптивной графики пока нет. поэтому прописал высоту
+    order: -1;
+    width: 100%;
+
+    &::before {
+      left: 283px;
+      top: 190px;
+    }
+  }
+
+  .production__text {
+    font-size: 15px;
+    margin: 0 40px;
+    margin-bottom: 37px;
+    padding: 0;
+    padding-top: 31px;
+    width: 100%;
+  }
+
+  .production__title {
+    font-size: 20px;
+    letter-spacing: 0.2px;
+    margin: 0 40px;
+    margin-top: 25px;
+    padding-left: 65px;
+    width: 100%;
+
+    &-img {
+      left: 0;
+      top: 9px;
+    }
+  }
+}
+
+@media (min-width: $w--desctop) {
+  .production {
+    padding-top: 25px;
+    margin-bottom: 100px;
+  }
+
+  .production-article {
+    flex-direction: column;
+    height: 455px;
+    padding: 0;
+  }
+
+  .production__preview {
+    margin-right: 18px;
+    width: 682px;
+
+    &::before {
+      left: 290px;
+    }
+  }
+
+  .production__buy,
+  .production__text {
+    width: 230px;
+  }
+
+  .production__text {
+    line-height: 2;
+    margin-bottom: 44px;
+    padding-top: 35px;
+  }
+
+  .production__title {
+    line-height: 1.2;
+    padding: 0;
+    padding-top: 71px;
+    width: 230px;
+
+    &-img {
+      left: 1px;
+      top: 17px;
+    }
+  }
+}
