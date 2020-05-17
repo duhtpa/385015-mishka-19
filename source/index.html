@@ -16,7 +16,11 @@
             <ul class="main-nav__list">
               <li class="main-nav__item main-nav__item--logo">
                 <a class="main-nav__logo" href="index.html">
-                  <img class="main-nav__logo-img" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип интернет-магазина Мишка">
+                  <picture>
+                    <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+                    <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+                    <img class="main-nav__logo-img" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип интернет-магазина Мишка">
+                  </picture>
                 </a>
               </li>
               <li class="main-nav__item main-nav__item--catalog">
@@ -101,7 +105,11 @@
               </tr>
             </table>
           </div>
-          <img class="week-offer__img" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Вязаные корзинки">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
+            <img class="week-offer__img" width="260" height="315" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" alt="Вязаные корзинки">
+          </picture>
           <footer class="week-offer__footer">
             <p class="week-offer__price">Цена: 990 руб.</p>
             <a class="week-offer__buy interactive-element button-pseudo" href="">Заказать</a>
@@ -187,7 +195,7 @@
         <p class="feedback__text">
           Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
         </p>
-        <img class="feedback__img" src="img/review@1x.jpg" width="350" height="457" alt="Изображение продукции интернет-магазина">
+        <img class="feedback__img" width="350" height="457" src="img/review@1x.jpg" srcset="img/review@2x.jpg 2x" alt="Изображение продукции интернет-магазина">
         <address class="feedback__author">
           <span class="feedback__author-name">Анастасия Красильникова</span>
           <span>@misssssiskras</span>
@@ -220,7 +228,11 @@
         </div>
         <div class="contacts__bottom wrapper">
           <a class="contacts__map" href="">
-            <img class="contacts__map-img" src="img/map-mobile@1x.jpg" width="768" height="457" alt="Офис компании по адресу г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
+              <img class="contacts__map-img" width="768" height="457" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="Офис компании по адресу г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+            </picture>
           </a>
           <a class="contacts__write interactive-element button-pseudo wrapper" href="">Напишите нам</a>
         </div>
