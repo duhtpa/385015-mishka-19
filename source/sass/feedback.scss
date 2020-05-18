@@ -103,12 +103,17 @@
   }
 
   .feedback__img {
+    background-image: url("../img/review@1x.jpg");
     height: 457px;
     left: 0;
     position: absolute;
     top: 13px;
     width: 350px;
     z-index: -1;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/review@2x.jpg");
+    }
   }
 
   .feedback__title {
