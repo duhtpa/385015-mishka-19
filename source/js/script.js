@@ -1,6 +1,8 @@
 var navMain = document.querySelector('.main-nav');
 var navToggle = document.querySelector('.main-nav__toggle');
 
+svg4everybody();
+
 navMain.classList.remove('main-nav--nojs');
 navMain.classList.remove('main-nav--opened');
 navMain.classList.add('main-nav--closed');
