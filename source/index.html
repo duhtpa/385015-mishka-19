@@ -274,6 +274,33 @@
         </div>
     </footer>
 
+    <section class="modal wrapper"> <!-- order-modal -->
+      <div class="modal__wrapper">
+        <form class="modal-form" action="" method="GET">
+          <fieldset class="modal-fieldset">
+            <legend class="modal-form__title">Добавить в&nbsp;корзину</legend>
+            <p class="modal-form__subtitle">Выберите размер:</p>
+            <ul class="modal-form__list">
+              <li class="modal-form__item">
+                <input id="modal-form__radio--s" class="modal-form__radio visually-hidden" type="radio" name="size" value="S" aria-label="размер S">
+                <label for="modal-form__radio--s" class="modal-form__label-radio">S</label>
+              </li>
+              <li class="modal-form__item">
+                <input id="modal-form__radio--m" class="modal-form__radio visually-hidden" type="radio" name="size" value="M" aria-label="размер M">
+                <label for="modal-form__radio--m" class="modal-form__label-radio">M</label>
+              </li>
+              <li class="modal-form__item">
+                <input id="modal-form__radio--l" class="modal-form__radio visually-hidden" type="radio" name="size" value="L" aria-label="размер L">
+                <label for="modal-form__radio--l" class="modal-form__label-radio">L</label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <button class="button-pseudo interactive-element modal-form__submit" type="submit">Добавить</button>
+        </form>
+      </div>
+    </section>
+
     <script src="js/script.js"></script>
   </body>
 </html>
