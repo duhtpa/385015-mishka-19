@@ -34,7 +34,7 @@
 .intro__title {
   @include font(1.2, 26px, 700);
   @include padding-v(75px, 70px);
-  @include padding-h(30px, 30px);
+  @include padding-h(0, 0);
   color: $black;
   letter-spacing: 0.7px;
   margin: auto;

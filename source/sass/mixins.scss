@@ -48,8 +48,9 @@
 
 @mixin wrapper {
   .wrapper {
+    @include padding-h(30px, 30px);
     margin: 0 auto;
-    width: $w--mobile;
+    width: $w--mobile-wrapper;
 
     @media (min-width: $w--tablet) {
       @include padding-h(50px, 50px);

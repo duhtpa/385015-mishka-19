@@ -3,7 +3,7 @@
   padding-bottom: 3px;
 
   & .wrapper {
-    @include padding-h();
+    @include padding-h(0, 0);
   }
 }
 
@@ -194,6 +194,6 @@
 
   .contacts__write {
     margin: 0;
-    margin-left: 178px;
+    margin-left: 228px;
   }
 }

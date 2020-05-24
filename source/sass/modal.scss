@@ -1,9 +1,13 @@
 .modal {
-  @include padding-h(30px, 30px)
+  // @include padding-h(30px, 30px)
   // bottom: calc(50% - 168px);
   // height: 336px;
   // left: calc(50% - 50vh);
   // position: fixed;
+
+  &.wrapper {
+    @include padding-h(0, 0)
+  }
 }
 
 .modal-fieldset {
