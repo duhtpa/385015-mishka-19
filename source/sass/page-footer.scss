@@ -21,8 +21,9 @@
 @media (min-width: $w--tablet) {
   .page-footer {
     @include padding-v(55px, 52px);
-    flex-direction: row;
-    justify-content: space-between;
+
+    // flex-direction: row;
+    // justify-content: space-between;
     margin: 0 auto;
   }
 
@@ -35,10 +36,10 @@
     width: 102px;
   }
 
-  .page-footer__logo-img {
-    height: 34px;
-    width: 102px;
-  }
+  // .page-footer__logo-img {
+  //   height: 34px;
+  //   width: 102px;
+  // }
 
   .page-footer__list,
   .page-footer__developer {

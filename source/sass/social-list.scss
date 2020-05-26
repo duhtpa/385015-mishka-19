@@ -20,8 +20,8 @@
 
 @media (min-width: $w--tablet) {
   .social-list {
+    @include padding-v(0, 9px);
     border-bottom: none;
-    @include padding-v(0px, 9px)
     padding-left: 83px;
   }
 }

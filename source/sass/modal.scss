@@ -4,9 +4,8 @@
   // height: 336px;
   // left: calc(50% - 50vh);
   // position: fixed;
-
   &.wrapper {
-    @include padding-h(0, 0)
+    @include padding-h(0, 0);
   }
 }
 
@@ -18,7 +17,7 @@
 }
 
 .modal-form {
-  @include padding-v(46px, 36px)
+  @include padding-v(46px, 36px);
 }
 
 .modal-form__item:nth-of-type(2) .modal-form__label-radio {
@@ -52,7 +51,7 @@
 .modal-form__submit {
   background-color: #63d1bb;
   border-color: #63d1bb;
-  color:$white;
+  color: $white;
   width: 100%;
 }
 
@@ -72,7 +71,7 @@
 
 @media (min-width: $w--tablet) {
   .modal {
-    @include padding-h(108px, 108px)
+    @include padding-h(108px, 108px);
     width: 566px;
   }
 
@@ -81,7 +80,7 @@
   }
 
   .modal-form__label-radio {
-    @include padding-h(52px, 52px)
+    @include padding-h(52px, 52px);
 
     &::before {
       width: 112px;

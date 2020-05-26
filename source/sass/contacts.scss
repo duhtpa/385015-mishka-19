@@ -46,7 +46,7 @@
     & .contacts-table__cell {
       padding-bottom: 5px;
 
-      &--underline  {
+      &--underline {
         box-shadow: 0 2px #cccccc;
       }
     }
@@ -70,7 +70,7 @@
 }
 
 
-@media (min-width: $w--tablet){
+@media (min-width: $w--tablet) {
   .contacts .wrapper {
     @include padding-h(50px, 50px);
   }
@@ -121,7 +121,7 @@
     position: relative;
 
     &::after {
-      background-image: url(../img/icon-flag.svg);
+      background-image: url("../img/icon-flag.svg");
       background-repeat: no-repeat;
       content: "";
       display: block;

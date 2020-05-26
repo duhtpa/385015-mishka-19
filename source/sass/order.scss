@@ -62,7 +62,10 @@
 
 .fieldset--type__label {
   letter-spacing: 0.1px;
-  // padding-left: 18px;
+
+  &::before {
+    border-radius: 50%;
+  }
 }
 
 .fieldset--type__legend {
@@ -170,15 +173,15 @@
   }
 }
 
-.fieldset--type__label {
-  &::before {
-    border-radius: 50%;
-  }
-}
+// .fieldset--type__label {
+//   &::before {
+//     border-radius: 50%;
+//   }
+// }
 
 .order-form__checkbox:checked + label {
   &::after {
-    background-image: url(../img/tick-mobile.svg);
+    background-image: url("../img/tick-mobile.svg");
     background-repeat: no-repeat;
     background-size: contain;
     content: "";
@@ -402,7 +405,7 @@
   .order-form__checkbox:checked + label::after {
     height: 26px;
     left: -67px;
-    top: 0px;
+    top: 0;
     width: 33px;
   }
 

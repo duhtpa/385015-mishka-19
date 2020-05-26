@@ -138,7 +138,7 @@
     display: none;
   }
 
-  .main-nav--nojs .main-nav__item{
+  .main-nav--nojs .main-nav__item {
     display: block;
   }
 
@@ -334,8 +334,8 @@
 
     &--new,
     &--sale {
+      @include padding-v(0, 5px);
       z-index: 3;
-      @include padding-v(0px, 5px);
 
       & .main-nav__link {
         font-size: 15px;
