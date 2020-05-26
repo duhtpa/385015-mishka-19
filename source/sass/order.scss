@@ -6,6 +6,7 @@
   font-weight: 700;
   color: #63d1bb;
   text-transform: uppercase;
+  padding-right: 20px;
 }
 
 .order-form__group {
@@ -33,12 +34,13 @@
 .fieldset--name__label {
   display: block;
   min-height: 40px;
+  padding-left: 18px;
 }
 
 .fieldset--color__item,
 .fieldset--type__item,
 .fieldset--name__item {
-  padding-bottom: 21px;
+  margin-bottom: 21px;
   padding-left: 63px;
 
   &:last-of-type {
@@ -55,11 +57,12 @@
 }
 
 .fieldset--type {
-  margin-bottom: 22px;
+  margin-bottom: 15px;
 }
 
 .fieldset--type__label {
   letter-spacing: 0.1px;
+  // padding-left: 18px;
 }
 
 .fieldset--type__legend {
@@ -96,7 +99,7 @@
 
 .fieldset--tel,
 .fieldset--email {
-  margin-top: 30px;
+  margin-top: 25px;
   position: relative;
 }
 
@@ -266,19 +269,19 @@
   .fieldset--type__item,
   .fieldset--name__item {
     font-size: 19px;
+    margin-bottom: 35px;
     padding-left: 80px;
-    padding-bottom: 35px;
   }
 
   .fieldset--color__list,
   .fieldset--type__list,
   .fieldset--name__list {
-    padding-left: 167px;
+    padding-left: 150px; //167px;
     padding-top: 0;
   }
 
   .fieldset--color {
-    @include padding-v(14px, 65px);
+    @include padding-v(14px, 63px);
     margin-bottom: 0;
   }
 
@@ -286,7 +289,7 @@
     width: 45%;
 
     &:nth-of-type(2n) {
-      margin-left: 40px;
+      margin-left: 29px;
     }
   }
 
@@ -308,8 +311,8 @@
   }
 
   .fieldset--name {
-    @include padding-v(18px, 66px);
-    // padding-top: 66px;
+    // @include padding-v(0px, 66px);
+    padding-top: 66px;
   }
 
   .fieldset--name__label {
@@ -323,8 +326,8 @@
 
   .fieldset--name__item {
     display: flex;
+    margin-bottom: 24px;
     padding-left: 0;
-    padding-bottom: 23px;
     padding-top: 0;
 
     &:first-of-type {
@@ -337,7 +340,7 @@
   }
 
   .fieldset__tel {
-    padding-top: 44px;
+    padding-top: 41px;
   }
 
   .fieldset--tel__img {
@@ -358,9 +361,9 @@
     width: calc(100% - 167px);
   }
 
-  .fieldset--type {
-    padding-bottom: 28px;
-  }
+  //  {.fieldset--type
+  //   padding-bottom: 28px;
+  // }
 
   .fieldset--addition {
     margin-top: 26px;
@@ -391,7 +394,7 @@
   .order-form__checkbox + label::before,
   .order-form__radio + label::before {
     height: 53px;
-    left: -81px;
+    // left: -81px;
     top: -15px;
     width: 54px;
   }
@@ -406,7 +409,7 @@
   .order-form__radio:checked + label::after {
     height: 20px;
     width: 20px;
-    left: -64px;
+    left: -47px;
   }
 
   .form-bottom {
